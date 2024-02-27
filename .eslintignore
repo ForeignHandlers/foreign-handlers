@@ -1,1 +1,3 @@
 dist
+*.d.ts
+packages/core/generated

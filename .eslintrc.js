@@ -21,8 +21,8 @@ const initialRules = {
   'quote-props': ['error', 'consistent-as-needed'],
   quotes: ['error', 'single', { avoidEscape: true }],
   curly: ['error', 'all'],
-  'no-plusplus': 'off', 
-  'no-void': ['error', { allowAsStatement: true }], 
+  'no-plusplus': 'off',
+  'no-void': ['error', { allowAsStatement: true }],
   'no-unused-expressions': ['error'],
   'no-empty-function': [
     'error',
@@ -33,7 +33,7 @@ const initialRules = {
   'no-param-reassign': 'error',
   'no-dupe-keys': 'error',
   'no-console': ['error', { allow: ['warn', 'error', 'debug'] }],
-  'no-underscore-dangle': ['off'], 
+  'no-underscore-dangle': ['off'],
   'no-magic-numbers': [
     'error',
     {
@@ -56,7 +56,7 @@ const initialRules = {
 };
 
 const tsRules = {
-  '@typescript-eslint/no-shadow': 'error', 
+  '@typescript-eslint/no-shadow': 'error',
   '@typescript-eslint/no-unused-vars': [
     'error',
     { argsIgnorePattern: '^_', destructuredArrayIgnorePattern: '^_' },
@@ -68,6 +68,7 @@ const tsRules = {
       allowExpressions: true,
       allowTypedFunctionExpressions: true,
       allowHigherOrderFunctions: true,
+      allowFunctionsWithoutTypeParameters: true,
     },
   ],
   '@typescript-eslint/no-floating-promises': 'error',
@@ -83,7 +84,7 @@ const tsRules = {
       enforce: [{ blankLine: 'never', prev: 'field', next: 'field' }],
     },
   ],
-  '@typescript-eslint/no-inferrable-types': 'off', 
+  '@typescript-eslint/no-inferrable-types': 'off',
   'class-methods-use-this': 'off',
   'consistent-return': 'off',
   '@typescript-eslint/no-unsafe-assignment': 'error',
@@ -111,14 +112,14 @@ const importSortOrderRule = {
 };
 
 const importRules = {
-  'import/extensions': 'off', 
-  'no-duplicate-imports': 'error', 
+  'import/extensions': 'off',
+  'no-duplicate-imports': 'error',
   'no-restricted-imports': [
     'error',
     {
       patterns: [
         {
-          group: ['lodash', '!lodash/'], 
+          group: ['lodash', '!lodash/'],
           message: "Please use 'lodash/*' instead.",
         },
         {
@@ -129,7 +130,7 @@ const importRules = {
     },
   ],
   'import/no-cycle': ['error', { maxDepth: '∞' }],
-  'import/prefer-default-export': 'off', 
+  'import/prefer-default-export': 'off',
   'import/no-extraneous-dependencies': [
     'error',
     {

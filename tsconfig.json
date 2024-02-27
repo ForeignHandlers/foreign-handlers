@@ -7,10 +7,8 @@
     "rootDir": "./",
     "baseUrl": "./",
     "paths": {
-      "$config": ["src/config/index"],
-      "$decorators": ["src/decorators/index"],
-      "$modules/*": ["src/modules/*"],
-      "$/*": ["src/*"]
+      "$core": ["packages/core/index"],
+      "$core/*": ["packages/core/*"]
     },
     "target": "ESNext",
     "module": "commonjs",
@@ -29,5 +27,5 @@
     "resolveJsonModule": true,
     "esModuleInterop": true
   },
-  "include": ["**/*.ts"]
+  "include": ["**/*.ts", "**/*.d.ts"]
 }
