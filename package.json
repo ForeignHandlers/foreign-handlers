@@ -4,6 +4,12 @@
   "version": "1.0.0",
   "main": "index.ts",
   "author": "awekrx",
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "prettier",
+      "eslint --fix"
+    ]
+  },
   "scripts": {
     "pretty": "prettier --write . --log-level warn",
     "lint": "eslint . --fix",
